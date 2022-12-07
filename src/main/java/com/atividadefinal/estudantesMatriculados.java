@@ -3,13 +3,15 @@ package com.atividadefinal;
 import java.sql.Date;
 
 public class estudantesMatriculados {
+  
+  void estudantesMatriculados(String matricula, Date dataMatricula){
+
+  }
   String getMatriculados(){
     return "";
   }  
-  void estudantesMatriculados(String matricula, Date dataMatricula){
-    
-  }
   boolean podeMatricular(Date dataMatricula){
     return true;
   }
+  
 }
