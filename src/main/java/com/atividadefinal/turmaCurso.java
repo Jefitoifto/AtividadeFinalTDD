@@ -31,57 +31,7 @@ public class turmaCurso {
    LocalDate getPeriodoMatriculas(){
     return inicioMatriculas;
    }
+}
 
-public String getLocal() {
-      return local;
-   }
-
-   public void setLocal(String local) {
-      this.local = local;
-   }
-
-   public int getVagas() {
-      return vagas;
-   }
-
-   public void setVagas(int vagas) {
-      this.vagas = vagas;
-   }
-
-   public void setVagasDisp(int vagasDisp) {
-      this.vagasDisp = vagasDisp;
-   }
-
-   public LocalDate getInicioAulas() {
-      return inicioAulas;
-   }
-
-   public void setInicioAulas(LocalDate inicioAulas) {
-      this.inicioAulas = inicioAulas;
-   }
-
-   public LocalDate getFimAulas() {
-      return fimAulas;
-   }
-
-   public void setFimAulas(LocalDate fimAulas) {
-      this.fimAulas = fimAulas;
-   }
-
-   public LocalDate getInicioMatriculas() {
-      return inicioMatriculas;
-   }
-
-   public void setInicioMatriculas(LocalDate inicioMatriculas) {
-      this.inicioMatriculas = inicioMatriculas;
-   }
-
-   public LocalDate getFimMatriculas() {
-      return fimMatriculas;
-   }
-
-   public void setFimMatriculas(LocalDate fimMatriculas) {
-      this.fimMatriculas = fimMatriculas;
-   }
-
+  
 }
