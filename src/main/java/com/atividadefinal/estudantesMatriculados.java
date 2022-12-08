@@ -1,17 +1,15 @@
 package com.atividadefinal;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class estudantesMatriculados {
-  
-  void estudantesMatriculados(String matricula, Date dataMatricula){
-
-  }
-  String getMatriculados(){
+  public String getMatriculados(){
     return "";
   }  
-  boolean podeMatricular(Date dataMatricula){
+  void estudantesMatriculados(String matricula, LocalDate dataMatricula){
+    
+  }
+  boolean podeMatricular(LocalDate dataMatricula){
     return true;
   }
-  
 }
