@@ -1,35 +1,38 @@
 package com.atividadefinal;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class turmaCurso {
    String local;
    int vagas;
-   int vagasDisponiveis;
-   Date inicioAulas; 
-   Date fimAulas;
-   Date inicioMatriculas;
-   Date fimMatriculas;
+   int vagasDisp;
+   LocalDate inicioAulas; 
+   LocalDate fimAulas;
+   LocalDate inicioMatriculas;
+   LocalDate fimMatriculas;
 
-   void turmaCurso(String local, int vagas, Date inicioAulas, 
-         Date fimAulas, Date inicioMatricula, Date fimMatricula, int vagasDisponiveis,
-         Date inicioMatriculas, Date fimMatriculas){
-            
+   public turmaCurso(String local, int vagas, LocalDate inicioAulas, LocalDate fimAulas, LocalDate inicioMatricula, LocalDate fimMatricula){
       this.local = local;
       this.vagas = vagas;
-      this.vagasDisponiveis = vagasDisponiveis;
+      this.vagasDisp = vagasDisp;
       this.inicioAulas = inicioAulas;
       this.fimAulas = fimAulas;
       this.inicioMatriculas = inicioMatriculas;
       this.fimMatriculas = fimMatriculas;
    }
 
-   public turmaCurso(String local, int vagas, int vagasDisponiveis, Date inicioAulas, Date fimAulas,
-         Date inicioMatriculas, Date fimMatriculas) {
-      
+   int getVagasDisponiveis(){
+    return vagasDisp;
    }
 
-   public String getLocal() {
+   void setVagasDisponiveis(){
+   }
+
+   LocalDate getPeriodoMatriculas(){
+    return inicioMatriculas;
+   }
+
+public String getLocal() {
       return local;
    }
 
@@ -45,48 +48,41 @@ public class turmaCurso {
       this.vagas = vagas;
    }
 
-   public void setVagasDisponiveis(int vagasDisponiveis) {
-      this.vagasDisponiveis = vagasDisponiveis;
+   public void setVagasDisp(int vagasDisp) {
+      this.vagasDisp = vagasDisp;
    }
 
-   public Date getInicioAulas() {
+   public LocalDate getInicioAulas() {
       return inicioAulas;
    }
 
-   public void setInicioAulas(Date inicioAulas) {
+   public void setInicioAulas(LocalDate inicioAulas) {
       this.inicioAulas = inicioAulas;
    }
 
-   public Date getFimAulas() {
+   public LocalDate getFimAulas() {
       return fimAulas;
    }
 
-   public void setFimAulas(Date fimAulas) {
+   public void setFimAulas(LocalDate fimAulas) {
       this.fimAulas = fimAulas;
    }
 
-   public Date getInicioMatriculas() {
+   public LocalDate getInicioMatriculas() {
       return inicioMatriculas;
    }
 
-   public void setInicioMatriculas(Date inicioMatriculas) {
+   public void setInicioMatriculas(LocalDate inicioMatriculas) {
       this.inicioMatriculas = inicioMatriculas;
    }
 
-   public Date getFimMatriculas() {
+   public LocalDate getFimMatriculas() {
       return fimMatriculas;
    }
 
-   public void setFimMatriculas(Date fimMatriculas) {
+   public void setFimMatriculas(LocalDate fimMatriculas) {
       this.fimMatriculas = fimMatriculas;
    }
 
-   int getVagasDisponiveis(){
-    return vagasDisponiveis;
-   }
-   void setVagasDisponiveis(){
-   }
-   Date getPeriodoMatriculas(){
-    return inicioMatriculas;
-   }
+  
 }
