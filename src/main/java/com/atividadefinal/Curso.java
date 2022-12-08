@@ -4,7 +4,7 @@ public class Curso {
     String nome;
     String cargaHoraria;
     String descricao;
-    void Curso(String nome, String cargaHoraria, String descricao){
+    public Curso(String nome, String cargaHoraria, String descricao){
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
         this.descricao = descricao;
@@ -29,3 +29,4 @@ public class Curso {
     }
     
 }
+
